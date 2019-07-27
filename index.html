@@ -78,7 +78,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	</div>
 	<header>
 		<div class="container" style ="padding-left:0px !Important;">
-			<img src="images/main.png" alt="img09" />
+			<img onClick="close_window();return false;" src="images/main.png" alt="img09" />
 		</div>
 	</header>
 	<!-- //header -->
@@ -381,6 +381,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 					});
 				});
+	function close_window(){
+		close();
+	}
 			</script>
 			<!-- start-smoth-scrolling -->
 	<!-- //here ends scrolling icon -->	
